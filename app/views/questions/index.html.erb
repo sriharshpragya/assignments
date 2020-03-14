@@ -1,0 +1,10 @@
+<div class="container">
+	<div class="row">
+		<%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
+	</div>
+	<div class="list-group">
+		<%@questions.each do |ques|%>
+		  	<%= link_to ques.content, question_path(ques.id), class:"list-group-item list-group-item-action question" %>
+	  	<%end%>
+	</div>
+</div>

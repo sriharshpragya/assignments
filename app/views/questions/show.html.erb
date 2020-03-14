@@ -1,0 +1,20 @@
+<div class="container">
+	<p>
+		Topic: <%=@question.topic.name%>
+	</p>
+	<p>
+		Question: <%=@question.content%> 
+	</p>
+	<p>
+	<%=link_to 'Follow User', follow_user_question_path(@question.id), method: :post, class: "btn btn-primary follow_user"%>
+	<%=link_to 'Follow Topic', follow_topic_question_path(@question.id), method: :post, class: "btn btn-primary follow_topic"%>
+	<p>
+	<div class="list-group">
+		Answers:
+		<%@question.answers.each do |answer|%>
+			<div class="list-group-item">
+				<p class="answer"><%=answer.content%></p>
+			</div>
+		<%end%>
+	</div>
+</div>

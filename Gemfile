@@ -40,7 +40,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 #devise gem
 gem 'devise', '~>4.7.1'
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'alertifyjs-rails', '~>1.12.0'
 gem 'kaminari', '~> 1.1.1'
 
